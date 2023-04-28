@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Disstructureing Array List</h1>
+
+<body>
+<script>
+let user =["yahoo baba",25,"solapur"];
+//let [name,age =22,city]=user;
+let [name,...args]=user;
+// console.log(user);
+// document.write(user);
+console.log(name);
+console.log(args);
+// console.log(age);
+// console.log(city)
+
+function users(){
+    return ["Goradwadi",45,"malsiras"];
+
+}
+let [village,MH45,Taluka]=users();
+console.log(MH45)
+console.log(village)
+</script>    
+</body>
+</html>

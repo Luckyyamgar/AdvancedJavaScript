@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seprate oprator</title>
+</head>
+<body>
+    
+    //... sprader oprator
+    <h1>oprator Program</h1>
+
+    <script>
+    function sum(name, ...args){
+        console.log(arguments);
+        document.write(`Hello ${name}`);
+
+        let sum=0;
+        for(let i in args){
+            sum +=args[i];
+        }
+        document.write(sum +"<br>")
+    }
+    var arr=[10,12,30];
+    sum ("Yahoo Baba:",...arr); //this is the sprate oprator
+    
+// second use of sprateoprator method
+var a=[10,12,30];
+var b=[40,39,89];
+var c=[4,...a,...b,100];
+ console.log(c)
+document.write(c);
+document.write("print the value"+c); 
+
+    </script>
+</body>
+</html>
